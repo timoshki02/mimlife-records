@@ -85,11 +85,11 @@ if os.getenv('SERVER_SOFTWARE', '').startswith('Google App Engine'):
     # the unix socket at /cloudsql/<your-cloudsql-connection string>
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'HOST': '/cloudsql/mimlife-164716:us-central1:timoshki02',
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'HOST': '/cloudsql/mimlife-164716:us-central1:timoshki03',
             'NAME': 'mimlife',
-            'USER': 'timoshki02',
-            'PASSWORD': 'Rattata24',
+            'USER': 'timoshki03',
+            'PASSWORD': 'Rattata23',
         }
     }
 else:
@@ -100,14 +100,14 @@ else:
     #
     # See https://cloud.google.com/sql/docs/mysql-connect-proxy
     DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'HOST': '127.0.0.1',
-            'PORT': '3307',
-            'NAME': 'mimlife',
-            'USER': 'timoshki02',
-            'PASSWORD': 'Rattata24',
-        }
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'mimlife',                      # Or path to database file if using sqlite3.
+        'USER': 'postgres',                      # Not used with sqlite3.
+        'PASSWORD': 'TIMOSHKIPONGOSAYSSO',                  # Not used with sqlite3.
+        'HOST': 'localhost',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '5433',                      # Set to empty string for default. Not used with sqlite3.
+    }
     }
 
 
