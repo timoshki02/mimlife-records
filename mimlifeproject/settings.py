@@ -89,7 +89,7 @@ if os.getenv('SERVER_SOFTWARE', '').startswith('Google App Engine'):
             'HOST': '/cloudsql/mimlife-164716:us-central1:timoshki02',
             'NAME': 'mimlife',
             'USER': 'timoshki02',
-            'PASSWORD': 'RATTATA23',
+            'PASSWORD': 'Rattata24',
         }
     }
 else:
@@ -105,7 +105,7 @@ else:
             'HOST': '127.0.0.1',
             'PORT': '3307',
             'NAME': 'mimlife',
-            'USER': 'root',
+            'USER': 'timoshki02',
             'PASSWORD': 'Rattata24',
         }
     }
