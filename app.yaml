@@ -1,5 +1,5 @@
 # [START django_app]
-runtime: python36
+runtime: python27
 api_version: 1
 threadsafe: yes
 
@@ -14,7 +14,7 @@ handlers:
 # only be included if they are part of the App Engine SDK
 # Using Third Party Libraries: https://cloud.google.com/appengine/docs/python/tools/using-libraries-python-27
 libraries:
-- name: PostgreSQL
+- name: PostgreSQLdb
   version: 9.6
 # [END django_app]
 
